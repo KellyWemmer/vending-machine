@@ -12,7 +12,8 @@ snacks = [
   new Snack('Reeses', 2.00)
 ]
   
-
+/** @type {import('./Models/snacks.js').Snack[]} */
+orders =[] //new array to put clicked items into to checkout
 
 }
 

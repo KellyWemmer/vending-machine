@@ -1,4 +1,5 @@
 import { ProxyState } from "../AppState.js";
+import { snackService } from "../Services/SnackService.js";
 
 function _drawSnacks() {
     let snacks = ProxyState.snacks
@@ -23,7 +24,7 @@ export class SnacksController {
         //update or draw
     }
 
-    clickToOrder() {
+    clickToOrder(name) {
         snackService.clickToOrder(name)
         //update or draw
     }
